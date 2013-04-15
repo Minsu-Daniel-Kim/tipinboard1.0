@@ -49,11 +49,11 @@ public class MainActivity extends Activity {
 		String username = user.getUsername();
 		tv_username.setText(username);
 
-		SurfaceView surface = new SurfaceView(this);
-		holder = surface.getHolder();
-		holder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
-		FrameLayout frame = (FrameLayout) findViewById(R.id.videoLayout);
-		frame.addView(surface);
+//		SurfaceView surface = new SurfaceView(this);
+//		holder = surface.getHolder();
+//		holder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
+//		FrameLayout frame = (FrameLayout) findViewById(R.id.videoLayout);
+//		frame.addView(surface);
 	}
 
 //	@Override

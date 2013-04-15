@@ -7,6 +7,7 @@ import java.util.List;
 import utils.ImageLoader;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
@@ -25,6 +26,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.corping.R;
+import com.corping.dashboard.VideoPlayActivity;
+import com.corping.dashboard.VoicePlayActivity;
 import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseFile;
@@ -38,6 +41,7 @@ public class ManualActivity extends Activity {
 	TextView missionContent, d_day;
 	AddImgAdp adapter;
 	String num;
+	String videoUrl;
 	ArrayList<String> example = new ArrayList<String>();
 	ArrayList<String> missionPic = new ArrayList<String>();
 
@@ -67,10 +71,59 @@ public class ManualActivity extends Activity {
 				// imgView.setImageResource(Imgid[position]);
 				Toast.makeText(getApplicationContext(), position + "", 3000)
 						.show();
+				if (position == 2) {
+
+					ParseQuery query = new ParseQuery("Post");
+					query.orderByDescending("createdAt");
+					query.findInBackground(new FindCallback() {
+
+						@Override
+						public void done(List<ParseObject> objects,
+								ParseException e) {
+							// TODO Auto-generated method stub
+							ParseObject obj = objects.get(0);
+
+							ParseFile videoFile = (ParseFile) obj
+									.get("contentVideo");
+							videoUrl = videoFile.getUrl();
+							Toast.makeText(getApplicationContext(), videoUrl,
+									3000).show();
+							Intent intent = new Intent(getApplicationContext(),
+									VideoPlayActivity.class);
+							intent.putExtra("url", videoUrl);
+							startActivity(intent);
+						}
+					});
+				}
+				// }else
+				//
+				// if (position == 2) {
+				//
+				// ParseQuery query = new ParseQuery("Post");
+				// query.orderByDescending("createdAt");
+				// query.findInBackground(new FindCallback() {
+				//
+				// @Override
+				// public void done(List<ParseObject> objects,
+				// ParseException e) {
+				// // TODO Auto-generated method stub
+				// ParseObject obj = objects.get(0);
+				//
+				// ParseFile videoFile = (ParseFile) obj
+				// .get("contentAudio");
+				// videoUrl = videoFile.getUrl();
+				// // Toast.makeText(getApplicationContext(), videoUrl,
+				// // 3000).show();
 				// Intent intent = new Intent(getApplicationContext(),
-				// MissionActivity_Post.class);
-				// intent.putExtra("mission", position);
+				// VoicePlayActivity.class);
+				// intent.putExtra("audioUrl", videoUrl);
 				// startActivity(intent);
+				// }
+				// });
+				//
+				// Toast.makeText(getApplicationContext(), "hi", 3000).show();
+				//
+				// }
 
 			}
 
@@ -234,7 +287,8 @@ public class ManualActivity extends Activity {
 		// int[] missionNos = { R.drawable.mission_1, R.drawable.mission_2,
 		// R.drawable.mission_3, R.drawable.mission_4,
 		// R.drawable.mission_5, R.drawable.mission_6 };
-		int[] missionPlaceholder = { R.drawable.up_image, R.drawable.up_video, R.drawable.up_video};
+		int[] missionPlaceholder = { R.drawable.up_image, R.drawable.up_video,
+				R.drawable.up_video };
 
 		private Context cont;
 		public ImageLoader imageLoader;

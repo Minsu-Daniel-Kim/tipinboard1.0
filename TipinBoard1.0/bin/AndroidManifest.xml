@@ -31,6 +31,9 @@
         <activity android:name=".main.MainActivity_Signin" />
         <activity android:name=".dashboard.MainActivity" />
         <activity android:name=".dashboard.Dashboard_List" />
+        <activity android:name=".dashboard.VideoPlayActivity" 
+            			android:screenOrientation="portrait"
+            />
         <activity android:name=".manual.ManualActivity" />
 
         <!-- <activity android:name=".media.MediaActivity_Post" /> -->

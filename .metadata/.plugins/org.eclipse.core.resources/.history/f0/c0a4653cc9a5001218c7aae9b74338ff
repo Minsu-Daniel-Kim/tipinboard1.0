@@ -1,0 +1,67 @@
+package com.corping.dashboard;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.Window;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.corping.R;
+import com.corping.main.ProjectActivity;
+import com.parse.ParseUser;
+
+public class MainActivity extends Activity {
+
+	TextView tv_username;
+
+	ParseUser user = ParseUser.getCurrentUser();
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		setContentView(R.layout.activity_main);
+		init();
+
+	}
+
+	public void init() {
+
+		tv_username = (TextView) findViewById(R.id.tv_username);
+		String username = user.getUsername();
+		tv_username.setText(username);
+	}
+
+	public void myPage(View v){
+		
+		Toast.makeText(getApplicationContext(), "My page", 3000).show();
+//		Intent intent = new Intent(getApplicationContext(), );
+		
+	}
+
+
+	public void detail(View v) {
+
+		// Toast.makeText(getApplicationContext(), "test", 3000).show();
+		Intent intent = new Intent(getApplicationContext(), Dashboard_List.class);
+		startActivity(intent);
+	}
+
+	public void logout() {
+
+		Toast.makeText(getApplicationContext(), "로그아웃!", 3000).show();
+
+		ParseUser.logOut();
+
+		Intent intent = new Intent(getApplication(), ProjectActivity.class);
+		intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
+				| Intent.FLAG_ACTIVITY_NEW_TASK);
+		intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+		startActivity(intent);
+		finish();
+
+	}
+
+}

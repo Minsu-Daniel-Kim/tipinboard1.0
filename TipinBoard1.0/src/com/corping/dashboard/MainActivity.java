@@ -1,21 +1,37 @@
 package com.corping.dashboard;
 
+import java.util.List;
+
+import utils2.ImageLoader2;
 import android.app.Activity;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.SurfaceHolder;
+import android.view.SurfaceView;
 import android.view.View;
 import android.view.Window;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.corping.R;
 import com.corping.main.ProjectActivity;
+import com.parse.FindCallback;
+import com.parse.ParseException;
+import com.parse.ParseFile;
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
 import com.parse.ParseUser;
 
 public class MainActivity extends Activity {
-
+	TextView tv_comment;
+	ImageView iv_contentPic;
+	SurfaceHolder holder;
 	TextView tv_username;
-
+	String videoUrl;
 	ParseUser user = ParseUser.getCurrentUser();
 
 	@Override
@@ -32,22 +48,82 @@ public class MainActivity extends Activity {
 		tv_username = (TextView) findViewById(R.id.tv_username);
 		String username = user.getUsername();
 		tv_username.setText(username);
+
+		SurfaceView surface = new SurfaceView(this);
+		holder = surface.getHolder();
+		holder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
+		FrameLayout frame = (FrameLayout) findViewById(R.id.videoLayout);
+		frame.addView(surface);
 	}
 
-	public void myPage(View v){
-		
+//	@Override
+//	protected void onResume() {
+//		// TODO Auto-generated method stub
+//		super.onResume();
+//		getPosts();
+//	}
+//
+//	public void getPosts() {
+//
+//		ParseQuery query = new ParseQuery("Post");
+//		query.orderByDescending("createdAt");
+//		query.findInBackground(new FindCallback() {
+//
+//			@Override
+//			public void done(List<ParseObject> objects, ParseException e) {
+//				// TODO Auto-generated method stub
+//				ParseObject obj = objects.get(0);
+//
+//
+//				ParseFile videoFile = (ParseFile) obj.get("contentVideo");
+//				videoUrl = videoFile.getUrl();
+//				Toast.makeText(getApplicationContext(), videoUrl, 3000).show();
+//			}
+//		});
+//		
+//		
+//
+//	}
+
+	public void myPage(View v) {
+
 		Toast.makeText(getApplicationContext(), "My page", 3000).show();
-//		Intent intent = new Intent(getApplicationContext(), );
-		
-	}
+		// Intent intent = new Intent(getApplicationContext(), );
 
+	}
 
 	public void detail(View v) {
 
-		// Toast.makeText(getApplicationContext(), "test", 3000).show();
-		Intent intent = new Intent(getApplicationContext(), Dashboard_List.class);
+		Intent intent = new Intent(getApplicationContext(),
+				Dashboard_List.class);
 		startActivity(intent);
+
 	}
+
+	public void play(View v) {
+		
+		ParseQuery query = new ParseQuery("Post");
+		query.orderByDescending("createdAt");
+		query.findInBackground(new FindCallback() {
+
+			@Override
+			public void done(List<ParseObject> objects, ParseException e) {
+				// TODO Auto-generated method stub
+				ParseObject obj = objects.get(0);
+
+
+				ParseFile videoFile = (ParseFile) obj.get("contentVideo");
+				videoUrl = videoFile.getUrl();
+				//Toast.makeText(getApplicationContext(), videoUrl, 3000).show();
+				Intent intent = new Intent(getApplicationContext(), VideoPlayActivity.class);
+				intent.putExtra("url", videoUrl);
+				startActivity(intent);
+			}
+		});
+
+	}
+
+
 
 	public void logout() {
 

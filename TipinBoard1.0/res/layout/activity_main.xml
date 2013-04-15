@@ -52,20 +52,39 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal" >
 
-        <Button
+        <RelativeLayout
             android:id="@+id/button1"
             android:layout_width="0dp"
             android:layout_height="150dp"
             android:layout_weight="1"
-            android:onClick="detail"
-            android:text="A" />
+            android:onClick="detail" >
 
-        <Button
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal"
+                android:text="CGV 강남"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
             android:id="@+id/button1"
             android:layout_width="0dp"
             android:layout_height="150dp"
             android:layout_weight="1"
-            android:text="B" />
+            android:onClick="detail" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal"
+                android:text="베스킨라빈스"
+                android:textStyle="bold" />
+        </RelativeLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -88,5 +107,17 @@
             android:layout_weight="1"
             android:text="D" />
     </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/videoLayout"
+        android:layout_width="120dp"
+        android:layout_height="100dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="play"
+        android:text="play" />
 
 </LinearLayout>

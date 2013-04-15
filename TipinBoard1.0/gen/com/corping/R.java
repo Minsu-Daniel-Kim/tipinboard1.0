@@ -24,38 +24,40 @@ public final class R {
         public static final int up_video=0x7f020007;
     }
     public static final class id {
-        public static final int LinearLayout01=0x7f060016;
+        public static final int LinearLayout01=0x7f060017;
         public static final int button1=0x7f060003;
-        public static final int button2=0x7f06000f;
-        public static final int editText_email=0x7f060009;
-        public static final int editText_id=0x7f06000b;
-        public static final int editText_password=0x7f06000a;
-        public static final int et_comment=0x7f060010;
-        public static final int examplegallery=0x7f06001b;
+        public static final int button2=0x7f060006;
+        public static final int editText_email=0x7f06000c;
+        public static final int editText_id=0x7f06000e;
+        public static final int editText_password=0x7f06000d;
+        public static final int et_comment=0x7f060011;
+        public static final int examplegallery=0x7f06001c;
         public static final int imageView1=0x7f060000;
-        public static final int imageView_contentPic=0x7f060011;
-        public static final int iv_contentPic=0x7f060015;
+        public static final int imageView_contentPic=0x7f060012;
+        public static final int iv_contentPic=0x7f060016;
         public static final int iv_profile=0x7f060001;
-        public static final int layout1=0x7f060004;
-        public static final int layout2=0x7f060008;
-        public static final int listView=0x7f060007;
-        public static final int media_audio=0x7f060012;
-        public static final int media_video=0x7f060013;
-        public static final int mission=0x7f06001a;
-        public static final int missionContent=0x7f06001c;
-        public static final int missionImage=0x7f060018;
-        public static final int missionNo=0x7f060019;
-        public static final int missionPlaceholder=0x7f060017;
-        public static final int progressBar=0x7f060005;
-        public static final int recordBtn=0x7f06000c;
-        public static final int recordStopBtn=0x7f06000d;
-        public static final int recording_cancelBtn=0x7f06001f;
-        public static final int recording_recordingTimeText=0x7f06001d;
-        public static final int recording_startstopBtn=0x7f06001e;
-        public static final int tv_comment=0x7f060014;
-        public static final int tv_percent=0x7f060006;
+        public static final int layout1=0x7f060007;
+        public static final int layout2=0x7f06000b;
+        public static final int listView=0x7f06000a;
+        public static final int media_audio=0x7f060013;
+        public static final int media_video=0x7f060014;
+        public static final int mission=0x7f06001b;
+        public static final int missionContent=0x7f06001d;
+        public static final int missionImage=0x7f060019;
+        public static final int missionNo=0x7f06001a;
+        public static final int missionPlaceholder=0x7f060018;
+        public static final int progressBar=0x7f060008;
+        public static final int recordBtn=0x7f06000f;
+        public static final int recordStopBtn=0x7f060010;
+        public static final int recording_cancelBtn=0x7f060021;
+        public static final int recording_recordingTimeText=0x7f06001f;
+        public static final int recording_startstopBtn=0x7f060020;
+        public static final int textView1=0x7f060004;
+        public static final int tv_comment=0x7f060015;
+        public static final int tv_percent=0x7f060009;
         public static final int tv_username=0x7f060002;
-        public static final int videoLayout=0x7f06000e;
+        public static final int videoLayout=0x7f060005;
+        public static final int video_playing_videoView=0x7f06001e;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -72,7 +74,8 @@ public final class R {
         public static final int mediaactivity_timeline=0x7f03000b;
         public static final int mission_featured_gallery_adpater=0x7f03000c;
         public static final int missionpage=0x7f03000d;
-        public static final int voice_recording_activity=0x7f03000e;
+        public static final int video_playing_activity=0x7f03000e;
+        public static final int voice_recording_activity=0x7f03000f;
     }
     public static final class string {
         public static final int app_name=0x7f050001;

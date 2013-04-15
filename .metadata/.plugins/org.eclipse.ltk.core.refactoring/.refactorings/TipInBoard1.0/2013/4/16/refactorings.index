@@ -6,3 +6,14 @@
 1366020332378	Rename type 'MainActivity'
 1366024061501	Delete element
 1366024338662	Rename package 'com.daniel.main'
+1366024759977	Rename package 'com.daniel.detail'
+1366024768433	Rename package 'com.daniel.media'
+1366024780224	Delete element
+1366024866708	Rename package 'com.corping.detail'
+1366024875020	Move compilation unit
+1366024879810	Delete element
+1366025021890	Copy compilation unit
+1366025266598	Copy file
+1366026065643	Move compilation unit
+1366026082517	Rename type 'MissionActivity'
+1366026203217	Delete element

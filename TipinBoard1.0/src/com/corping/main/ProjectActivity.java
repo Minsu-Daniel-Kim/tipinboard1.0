@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.corping.R;
+import com.corping.dashboard.MainActivity;
 import com.parse.ParseAnalytics;
 import com.parse.ParseUser;
 

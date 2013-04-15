@@ -1,0 +1,7 @@
+package com.daniel.detail;
+
+public class Snippet {
+	String username = user.getUsername();
+		tv_username.setText(username);
+}
+

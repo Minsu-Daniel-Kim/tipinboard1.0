@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.daniel"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name=".main.ParseApplication"
+        android:label="Tip in Board" >
+        <activity
+            android:name=".main.ProjectActivity"
+            android:label="Tip in Board" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".main.MainActivity_GetStarted" />
+        <activity android:name=".main.MainActivity_Tab" />
+        <activity android:name=".main.MainActivity_Signin" />
+        <activity android:name=".main.MainActivity" />
+        <activity android:name=".media.MediaActivity_Post" />
+        <activity android:name=".media.MediaActivity" />
+        <activity android:name=".media.ChecklistActivity" />
+        <activity android:name=".media.AudioRecorderActivity" />
+        <activity android:name=".media.MediaActivity_Timeline" />
+        <activity android:name=".media.AudioRecorderActivity2" />
+        <activity android:name=".media.VideoRecorderActivity" />
+    </application>
+
+</manifest>

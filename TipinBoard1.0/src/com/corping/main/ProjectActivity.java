@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.corping.R;
-import com.corping.dashboard.MainActivity;
+import com.corping.dashboard.DashboardActivity;
 import com.parse.ParseAnalytics;
 import com.parse.ParseUser;
 
@@ -26,7 +26,7 @@ public class ProjectActivity extends Activity {
 
 			Toast.makeText(getApplicationContext(), "Hi!", 5000).show();
 			Intent intent = new Intent(getApplicationContext(),
-					MainActivity.class);
+					DashboardActivity.class);
 
 			startActivity(intent);
 			finish();

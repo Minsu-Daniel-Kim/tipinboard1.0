@@ -337,7 +337,7 @@ public class ManualActivity extends Activity {
 			ViewHolder holder;
 			if (convertView == null) {
 				vi = inflater.inflate(
-						R.layout.mission_featured_gallery_adpater, null);
+						R.layout.featured_gallery_adpater, null);
 				holder = new ViewHolder();
 				holder.missions = (TextView) vi.findViewById(R.id.mission);
 				holder.missionImage = (ImageView) vi

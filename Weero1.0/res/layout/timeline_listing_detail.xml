@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f1eeef" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false" >
+        </ListView>
+    </LinearLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <EditText
+            android:id="@+id/editText_comment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="75dp"
+            android:ems="10"
+            android:hint="댓글을 입력해주세요~"
+            android:imeOptions="actionDone"
+            android:maxLines="2"
+            android:onClick="editText_comment"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:textSize="15dp" >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/insertComment"
+            android:layout_width="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:imeOptions="actionDone"
+            android:onClick="insertComment" />
+    </RelativeLayout>
+
+    <!-- <RelativeLayout -->
+    <!-- xmlns:android="http://schemas.android.com/apk/res/android" -->
+    <!-- android:id="@+id/event_listing" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="55dp" -->
+    <!-- android:layout_alignParentTop="true" -->
+    <!-- android:orientation="horizontal" > -->
+    <!-- </RelativeLayout> -->
+
+</RelativeLayout>

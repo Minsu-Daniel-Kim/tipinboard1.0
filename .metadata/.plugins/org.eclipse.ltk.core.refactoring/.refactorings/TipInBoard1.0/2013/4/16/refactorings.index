@@ -18,3 +18,22 @@
 1366026082517	Rename type 'MissionActivity'
 1366026203217	Delete element
 1366037767724	Delete element
+1366085170743	Rename type 'MainActivity'
+1366085991971	Rename resource 'dashboardpage.xml'
+1366086010673	Rename resource 'activity_main2.xml'
+1366086043886	Delete element
+1366086062867	Rename resource 'featured_adapter_griditems.xml'
+1366086073205	Delete element
+1366086121022	Delete element
+1366086136926	Delete element
+1366086155536	Rename resource 'mission_featured_gallery_adpater.xml'
+1366086995671	Delete element
+1366086997770	Delete element
+1366086999331	Delete element
+1366087003799	Delete element
+1366087006422	Delete element
+1366087404229	Copy compilation unit
+1366087416385	Rename type 'DummyActivity'
+1366087435368	Copy compilation unit
+1366087448295	Delete element
+1366087460633	Copy file

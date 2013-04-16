@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f1eeef"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        >
+
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Vote" />
+    </RelativeLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-8dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/textView_titled" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="40dp" -->
+            <!-- android:layout_marginBottom="1dp" -->
+            <!-- android:gravity="center_vertical" -->
+            <!-- android:paddingLeft="10dp" -->
+            <!-- android:singleLine="true" -->
+            <!-- android:text="" -->
+            <!-- android:textColor="#4682b4" -->
+            <!-- android:textStyle="bold" /> -->
+
+            <ImageView
+                android:id="@+id/imageView_eventpic"
+                android:layout_width="fill_parent"
+                android:layout_height="260dp"
+                android:layout_margin="5dp" />
+
+            <!-- android:layout_marginLeft="15dp" -->
+            <!-- android:layout_marginRight="15dp" -->
+            <!-- /> -->
+
+
+            <!-- <TableLayout -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" > -->
+
+
+            <!-- <LinearLayout -->
+            <!-- android:id="@+id/layout_hardness" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="30dp" -->
+            <!-- android:layout_marginBottom="1dp" -->
+            <!-- android:gravity="center_vertical" -->
+            <!-- android:orientation="horizontal" > -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/textView1" -->
+            <!-- android:layout_width="80dp" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_marginLeft="10dp" -->
+            <!-- android:text="난이도" -->
+            <!-- android:textColor="#808080" -->
+            <!-- android:textStyle="bold" /> -->
+
+
+            <!-- <RatingBar -->
+            <!-- android:id="@+id/ratingBar" -->
+            <!-- style="?android:attr/ratingBarStyleSmall" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_marginRight="50dp" -->
+            <!-- android:gravity="left" -->
+            <!-- android:isIndicator="true" -->
+            <!-- android:numStars="5" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/textView_hardness" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:text="" -->
+            <!-- android:textColor="#4682b4" /> -->
+            <!--  -->
+            <!-- </LinearLayout> -->
+
+
+            <!-- <LinearLayout -->
+            <!-- android:id="@+id/layout_timeTaken" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="30dp" -->
+            <!-- android:layout_marginBottom="1dp" -->
+            <!-- android:gravity="center_vertical" -->
+            <!-- android:orientation="horizontal" > -->
+
+
+            <!-- <TableRow -->
+            <!-- android:id="@+id/tableRow2" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" > -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/textView1" -->
+            <!-- android:layout_width="80dp" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_marginLeft="10dp" -->
+            <!-- android:text="소요시간" -->
+            <!-- android:textColor="#808080" -->
+            <!-- android:textStyle="bold" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/textView_time" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:gravity="left" -->
+            <!-- android:text="" -->
+            <!-- android:textColor="#4682b4" /> -->
+            <!-- </LinearLayout> -->
+
+
+            <!-- <LinearLayout -->
+            <!-- android:id="@+id/tableRow1" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="30dp" -->
+            <!-- android:layout_marginBottom="1dp" -->
+            <!-- android:gravity="center_vertical" -->
+            <!-- android:orientation="horizontal" > -->
+
+
+            <!-- </TableRow> -->
+
+
+            <!-- <TableRow -->
+            <!-- android:id="@+id/tableRow3" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" > -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/textview_cost" -->
+            <!-- android:layout_width="80dp" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_marginLeft="10dp" -->
+            <!-- android:text="비용" -->
+            <!-- android:textColor="#808080" -->
+            <!-- android:textStyle="bold" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/textView_cost" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:gravity="left" -->
+            <!-- android:text="" -->
+            <!-- android:textColor="#4682b4" /> -->
+            <!-- </LinearLayout> -->
+            <!-- <TableRow> -->
+            <!-- </TableRow> -->
+
+
+            <!-- <LinearLayout -->
+            <!-- android:id="@+id/layout_materials" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_marginBottom="1dp" -->
+            <!-- android:gravity="center_vertical" -->
+            <!-- android:orientation="horizontal" > -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/textView1" -->
+            <!-- android:layout_width="80dp" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_marginLeft="10dp" -->
+            <!-- android:text="준비물" -->
+            <!-- android:textColor="#808080" -->
+            <!-- android:textStyle="bold" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/textView_materials" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:gravity="left" -->
+            <!-- android:text="" -->
+            <!-- android:textColor="#4682b4" /> -->
+            <!-- </LinearLayout> -->
+            <!-- </TableRow> -->
+
+
+            <!-- <TableLayout> -->
+            <!-- </TableLayout> -->
+
+            <Button
+                android:id="@+id/textView_eventcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginRight="-10dp"
+                android:layout_marginTop="-17dp"
+                android:lineSpacingMultiplier="1.5"
+                android:paddingTop="20dp"
+                android:text="내용"
+                android:textSize="15dp"
+                android:textStyle="italic"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- <ImageView -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="25dp" -->
+    <!-- android:layout_marginTop="1dp" /> -->
+
+</LinearLayout>

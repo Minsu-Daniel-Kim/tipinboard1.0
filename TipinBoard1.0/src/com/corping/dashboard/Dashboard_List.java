@@ -26,7 +26,7 @@ public class Dashboard_List extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.dashboardpage);
+		setContentView(R.layout.dashboardpage_list);
 		init();
 		listview.setAdapter(adapter);
 

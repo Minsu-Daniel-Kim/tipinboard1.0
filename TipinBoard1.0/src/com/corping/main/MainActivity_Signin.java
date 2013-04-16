@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.corping.R;
-import com.corping.dashboard.MainActivity;
+import com.corping.dashboard.DashboardActivity;
 import com.parse.LogInCallback;
 import com.parse.ParseException;
 import com.parse.ParseUser;
@@ -90,7 +90,7 @@ public class MainActivity_Signin extends Activity {
 									"로그인 되었습니다!", 3000).show();
 
 							Intent intent = new Intent(getApplicationContext(),
-									MainActivity.class);
+									DashboardActivity.class);
 							intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK
 									| Intent.FLAG_ACTIVITY_NEW_TASK);
 							startActivity(intent);

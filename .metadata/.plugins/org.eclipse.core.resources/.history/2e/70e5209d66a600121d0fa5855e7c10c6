@@ -1,0 +1,15 @@
+package com.example.flipanimation;
+
+import android.app.Fragment;
+import android.os.Bundle;
+
+
+public class Fragment2 extends Fragment {
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+       
+    }
+
+}

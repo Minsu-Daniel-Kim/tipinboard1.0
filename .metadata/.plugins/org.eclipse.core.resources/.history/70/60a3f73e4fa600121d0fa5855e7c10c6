@@ -1,0 +1,41 @@
+ackage com.corping.media;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+
+import com.corping.R;
+
+public class MediaActivity extends Activity {
+
+	/** Called when the activity is first created. */
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.mediaactivity);
+
+	}
+
+	public void nextAudio(View v) {
+
+		Intent intent = new Intent(getApplicationContext(),
+				AudioRecorderActivity.class);
+		startActivity(intent);
+
+	}
+
+	public void nextVideo(View v) {
+		Intent intent = new Intent(getApplicationContext(),
+				VideoRecorderActivity.class);
+		startActivity(intent);
+	}
+
+	public void post(View v) {
+
+		Intent intent = new Intent(getApplicationContext(),
+				MediaActivity_Post.class);
+		startActivity(intent);
+
+	}
+}

@@ -1,0 +1,16 @@
+package com.example.flipanimation;
+
+import android.app.Activity;
+import android.content.Context;
+import android.os.Bundle;
+import android.view.View;
+
+public class Fragment1 extends View {
+
+	public Fragment1(Context context) {
+		super(context);
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+}

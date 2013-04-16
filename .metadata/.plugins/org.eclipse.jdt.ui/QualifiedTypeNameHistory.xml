@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.daniel.main.MainActivity"/>
+<fullyQualifiedTypeName name="android.app.Activity"/>
+<fullyQualifiedTypeName name="com.daniel.media.ChecklistActivity"/>
+<fullyQualifiedTypeName name="android.view.View.OnLongClickListener"/>
+<fullyQualifiedTypeName name="android.widget.AdapterView.OnItemLongClickListener"/>
+<fullyQualifiedTypeName name="com.daniel.R.id"/>
+<fullyQualifiedTypeName name="com.parse.ParseObject"/>
+<fullyQualifiedTypeName name="com.parse.ParseUser"/>
+<fullyQualifiedTypeName name="com.daniel.R"/>
+<fullyQualifiedTypeName name="android.net.DhcpInfo"/>
+<fullyQualifiedTypeName name="com.daniel.detail.Dummy"/>
+<fullyQualifiedTypeName name="com.corping.main.MainActivity_GetStarted"/>
+<fullyQualifiedTypeName name="android.widget.ListView"/>
+<fullyQualifiedTypeName name="com.corping.R.id"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="android.widget.ArrayAdapter"/>
+<fullyQualifiedTypeName name="android.R"/>
+<fullyQualifiedTypeName name="android.R.layout"/>
+<fullyQualifiedTypeName name="android.widget.AdapterView.OnItemClickListener"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="com.corping.manual.ManualActivity"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="com.corping.dashboard.VideoPlayActivity"/>
+<fullyQualifiedTypeName name="com.corping.dashboard.Dashboard_List"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+<fullyQualifiedTypeName name="android.content.Intent"/>
+<fullyQualifiedTypeName name="com.corping.R"/>
+<fullyQualifiedTypeName name="com.corping.dashboard.VoicePlayActivity"/>
+</qualifiedTypeNameHistroy>

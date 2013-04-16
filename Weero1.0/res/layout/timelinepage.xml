@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/list"
+		android:background="#f1eeef"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+<!--     <com.capricorn.ArcMenu -->
+<!--         android:id="@+id/arc_menu" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignParentBottom="true" -->
+<!--         android:layout_alignParentLeft="true" -->
+<!--         android:layout_marginBottom="-70dp" -->
+<!--         android:layout_marginLeft="-70dp" /> -->
+
+</RelativeLayout><!--
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/upper_bar"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/home_style"
+            android:onClick="home"
+            android:textSize="15dp" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/write_style"
+            android:onClick="post"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="15dp"
+        android:orientation="vertical" >
+      <Gallery
+            android:id="@+id/hundredEvent_banner_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+-->
+<!--
+<LinearLayout>
+
+</LinearLayout> </LinearLayout>
+-->
